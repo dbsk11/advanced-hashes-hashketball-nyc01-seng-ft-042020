@@ -185,7 +185,7 @@ def player_stats(player_name)
     team_data[:players].each do |data|
       if data[:players] == player_name
         data.delete(:name)
-        player_stats = data
+        player_stats << data
       end
     end
   end
