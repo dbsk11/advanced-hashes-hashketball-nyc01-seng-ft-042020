@@ -137,6 +137,7 @@ def num_points_scored(player_name)
           return data_item[:points]
         else
           return no value
+        end 
       end
     end
   end
