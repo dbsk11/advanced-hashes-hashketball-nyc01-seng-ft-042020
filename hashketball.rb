@@ -137,7 +137,6 @@ def num_points_scored(player_name)
         if data_item[:player_name] == player_name
           return data_item[:points]
         end
-        binding.pry
       end
     end
   end
