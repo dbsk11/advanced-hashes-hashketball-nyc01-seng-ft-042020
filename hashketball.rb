@@ -144,7 +144,6 @@ def num_points_scored(player_name)
   end
 end
 
-
 def shoe_size(player_name)
   game_hash.each do |location, team_data|
     team_data[:players].each do |data|
@@ -173,18 +172,6 @@ def player_numbers(team_name)
   players_num = []
   game_hash.each do |location, team_data|
     if team_data[:team_name] == team_name
-      team_data[:players].each do |attribute, data|
-        binding.pry
-        if attribute == :players
-          data.each do |num|
-            players_num.push(num[:number])
-          end
-          binding.pry
-        end
-        binding.pry
+      return team_data[:players].map do
+        
       end
-      binding.pry
-    end
-  end
-  return players_num
-end
