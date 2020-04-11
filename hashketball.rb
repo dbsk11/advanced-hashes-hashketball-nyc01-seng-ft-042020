@@ -151,9 +151,10 @@ def shoe_size(player_name)
         found_player = data.find do |player|
           player[:player_name] == player_name
         end
-        binding.pry
+      
         if found_player
           return found_player[:shoe_size]
+            binding.pry
         end
       end
     end
