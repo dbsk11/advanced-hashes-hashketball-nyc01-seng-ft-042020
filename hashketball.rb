@@ -150,10 +150,14 @@ def shoe_size(player_name)
       if attribute == :players
         attribute[:players] == player_name
         return attribute[:shoe]
-    team_data[:players].each do |data|
-      if data[:player_name] == player_name
-        return data[:shoe]
       end
     end
   end
 end
+#     team_data[:players].each do |data|
+#       if data[:player_name] == player_name
+#         return data[:shoe]
+#       end
+#     end
+#   end
+# end
