@@ -186,6 +186,11 @@ def player_stats(player_name)
       if data[:player] == player_name
         data.delete(:name)
         player_stats = data
+      end
+    end
+  end
+  player_stats
+end
 
 def big_shoe_rebounds
 end
