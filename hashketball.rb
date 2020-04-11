@@ -180,19 +180,12 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
+  player_stats = {}
   game_hash.each do |location, team_data|
-    team_data.each do |attribute, data|
-      if attribute == :players
-        data.each do |player|
-          if player_name == player[:players]
-            players.delete(:player_name)
-            return player
-          end
-        end
-      end
-    end
-  end
-end
+    team_data[:player]. each do |data|
+      if data[:player] == player_name
+        data.delete(:name)
+        player_stats = data
 
 def big_shoe_rebounds
 end
