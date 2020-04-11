@@ -163,5 +163,5 @@ def team_colors(team_name_input)
   end
 end
 
-def team_names(game_hash_)
+def team_names(game_hash)
   game_hash.each do |location, team_data|
