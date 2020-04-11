@@ -184,7 +184,3 @@ def player_numbers(team_name)
   end
   return players_num
 end
-      return players_num << team_data[:numbers]
-    end
-  end
-end
