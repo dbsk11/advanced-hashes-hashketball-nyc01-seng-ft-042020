@@ -185,7 +185,6 @@ def player_stats(player_name)
     team_data[:players].each do |data|
       if data[:players] == player_name
         data.delete(:name)
-        binding.pry
         player_stats << data
       end
     end
