@@ -135,15 +135,21 @@ def num_points_scored(player_name)
       data.find do |data_item|
         if data_item[:player_name] == player_name
           return data_item[:points]
-
-      if attribute == :players
-        found_player = data.find do |player|
-          player[:player_name] == player_name
-        end
-        if found_player
-          return found_player[:points]
         end
       end
     end
   end
 end
+
+
+#       if attribute == :players
+#         found_player = data.find do |player|
+#           player[:player_name] == player_name
+#         end
+#         if found_player
+#           return found_player[:points]
+#         end
+#       end
+#     end
+#   end
+# end
