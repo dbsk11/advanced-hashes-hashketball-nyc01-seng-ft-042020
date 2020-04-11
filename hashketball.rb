@@ -187,6 +187,7 @@ def player_stats(player_name)
         data.delete(:name)
         player_stats = data
       end
+      binding.pry
     end
   end
   player_stats
