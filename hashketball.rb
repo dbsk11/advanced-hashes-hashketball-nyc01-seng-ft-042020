@@ -198,7 +198,7 @@ def big_shoe_rebounds
         big_shoe = data[:shoe]
         rebounds = data[:rebounds]
       end
-      
+
       return rebounds
     end
   end
